@@ -10,6 +10,7 @@ void test_add(void);
 void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
+void test_factorial(void);
 
 /* Start of the application test */
 int main() {
@@ -26,7 +27,7 @@ int main() {
   CU_add_test(suite, "subtract", test_subtract);
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
- 
+ CU_add_test(suite, "factorial", test_factorial);
 
 
 
@@ -71,5 +72,13 @@ void test_divide(void) {
   /* Dummy fail*/
   CU_ASSERT(3 == divide(2, 2));
 }
+
+void test_factorial(void) {
+  CU_ASSERT(6 == factorial(3));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == factorial(0));
+}
+
 
 
