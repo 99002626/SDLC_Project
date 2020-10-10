@@ -1,6 +1,6 @@
 /** 
 * @file calculator_operations.h
-* Calculator application with 4 mathematical operations
+* Calculator application with 5 mathematical operations
 *
 */
 #ifndef __CALCULATOR_OPERATIONS_H__
@@ -44,5 +44,6 @@ int multiply(int operand1, int operand2);
 */
 int divide(int operand1, int operand2);
 
+int factorial(int number);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
